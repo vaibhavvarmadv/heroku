@@ -1,0 +1,11 @@
+# coping a base image from docker hub
+FROM python:3.7-alpine3.13
+# changing working directory
+WORKDIR /project
+# copy local files to project directory
+ADD ./
+
+# install all the requirments
+RUN pip install -r requirement.txt
+# Run file 
+CMD['python','main.py']
