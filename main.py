@@ -7,7 +7,7 @@ Swagger(app)
 
 @app.route('/', methods = ['GET', 'Post'])
 def welcome():
-    return render_template('index.html')
+    return "Hey Good Morning"
 
 @app.route('/name/<your_name>')
 def names(your_name):
